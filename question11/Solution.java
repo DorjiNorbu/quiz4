@@ -8,9 +8,9 @@ public class Solution {
         int distance = arr1.length;
 
         outerFor:
-        for (int n1 : arr1) {
-            for (int n2 : arr2) {
-                if (Math.abs(n1 - n2) <= dist) {
+        for (int numberOne : arr1) {
+            for (int numberTwo : arr2) {
+                if (Math.abs(numberOne - numberTwo) <= dist) {
                     distance--;
                     continue outerFor;
                 }
