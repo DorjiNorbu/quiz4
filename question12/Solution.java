@@ -12,11 +12,12 @@ public class Solution {
         for(int i=0;i<matrix.length;i++){
             int rowMin=matrix[i][0], rowMinIndex=0, colMax=0;
             for(int j=0;j<matrix[i].length;j++){
-                rowMin=Integer.min(rowMin,matrix[i][j]);
-//                if (rowMin > matrix[i][j]) {
-//                    rowMin = matrix[i][j];
-//                    rowMinIndex = j;
-//                }
+//                rowMin=Integer.min(rowMin,matrix[i][j]);
+
+                if (rowMin > matrix[i][j]) {
+                    rowMin = matrix[i][j];
+                    rowMinIndex = j;
+                }
             }
             for(int j=0;j<matrix.length;j++){
                 colMax=Integer.max(colMax,matrix[j][rowMinIndex]);
